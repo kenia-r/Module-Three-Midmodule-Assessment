@@ -6,7 +6,7 @@ const Product = ({product, addToCart}) => {
  return(
      <li>
          <h3>{name}</h3>
-         Price: {price}
+         Price: ${price.toFixed(2)}
          <button onClick={() => addToCart(product)}>Add To Cart</button>
          <img src={img} alt="product"/>
          <p>{description}</p>

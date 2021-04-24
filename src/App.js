@@ -18,7 +18,7 @@ class App extends React.Component {
     const { cart } = this.state;
     const subTotal = cart.reduce((sum, added) => sum + added.price, 0)
     const tax = (subTotal * .05).toFixed(2)
-    const totalPrice = 5
+    const totalPrice = Number(subTotal) + Number(tax)
 
     return(
       <div className="App">
@@ -28,7 +28,7 @@ class App extends React.Component {
         </div>
         <div className="CheckingOut">
           <ShoppingCart cart={this.state.cart} subTotal={subTotal} tax={tax} totalPrice={totalPrice}/>
-          <CheckoutForm subTotal={subTotal || 0}/>
+          <CheckoutForm subTotal={subTotal || 0} totalPrice={totalPrice}/>
         </div>
       </div>
     )

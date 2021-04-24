@@ -10,7 +10,7 @@ const ShoppingCart = ({ cart, subTotal, tax, totalPrice }) => {
       </ul>
       <h3>Subtotal: ${subTotal.toFixed(2)}</h3>
       <h3>Tax: ${tax}</h3>
-      <h3>Total: ${totalPrice}</h3>
+      <h3>Total: ${totalPrice.toFixed(2)}</h3>
     </div>
   );
 };

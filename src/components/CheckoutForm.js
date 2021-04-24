@@ -23,7 +23,7 @@ class CheckoutForm extends React.Component {
     } else if (zipCode.length !== 5 || !numInputs(zipCode)) {
         window.alert("Zip code is not valid")
     } else {
-        window.alert(`Purchase complete! You will be charged ${totalPrice}`)
+        window.alert(`Purchase complete! You will be charged $${totalPrice.toFixed(2)}`)
     }
   };
 

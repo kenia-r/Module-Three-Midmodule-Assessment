@@ -1,0 +1,15 @@
+.Products {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  margin: 20px;
+}
+
+.Products li {
+  display: flex;
+  flex-direction: column;
+}
+
+.Products button {
+  display: block;
+}
